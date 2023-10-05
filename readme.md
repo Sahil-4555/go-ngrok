@@ -13,7 +13,7 @@ Before getting started, make sure you have the following installed:
 
 1. Clone the repository
 
-````
+```
 git clone https://github.com/Sahil-4555/go-ngrok.git
 ```
 
