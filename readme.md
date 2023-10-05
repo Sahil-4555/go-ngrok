@@ -11,48 +11,47 @@ Before getting started, make sure you have the following installed:
 
 ## Getting Started
 
-1. Clone the repository
+- Clone the repository
 
-```
-git clone https://github.com/Sahil-4555/go-ngrok.git
-```
+    ```
+    git clone https://github.com/Sahil-4555/go-ngrok.git
+    ```
 
-2. Place images
+- Place images
 
-Place your image files in the "images" directory. Ensure your images have extensions like .jpg, .jpeg, or .png.
+    Place your image files in the "images" directory. Ensure your images have extensions like .jpg, .jpeg, or .png.
 
-3. Run the server
+- Run the server
 
-```
-go run main.go
-```
-This will start the Golang server, and it will be accessible at http://localhost:8080.
+    ```
+    go run main.go
+    ```
+    This will start the Golang server, and it will be accessible at http://localhost:8080.
 
-4. Expose with Ngrok
-In a separate terminal, run Ngrok to expose your local server:
-```
-ngrok http 8080
-```
-Ngrok will generate public URLs (e.g., https://abcd1234.ngrok.io) that you can use to access your server from anywhere.
+- Expose with Ngrok
+    In a separate terminal, run Ngrok to expose your local server:
+    ```
+    ngrok http 8080
+    ```
+    Ngrok will generate public URLs (e.g., https://abcd1234.ngrok.io) that you can use to access your server from anywhere.
 
-5. Access Images
+- Access Images
 
-You can access your images by using the Ngrok-generated URL with the following structure:
-```
-https://abcd1234.ngrok.io/images/your-image.jpg
-```
+    You can access your images by using the Ngrok-generated URL with the following structure:
+    ```
+    https://abcd1234.ngrok.io/images/your-image.jpg
+    ```
 
 ## Support Images Types
 
-The server supports the following image types by default:
+    The server supports the following image types by default:
 
-- JPEG (.jpg, .jpeg)
-- PNG (.png)
+    - JPEG (.jpg, .jpeg)
+    - PNG (.png)
 
-You can add more image types by extending the getContentType function in the code.
+    You can add more image types by extending the getContentType function in the code.
 
 ## Customization
 
-You can customize the server code to fit your needs. For example, you can change the port, modify the supported image types, or enhance security.
+    You can customize the server code to fit your needs. For example, you can change the port, modify the supported image types, or enhance security.
 
-````
